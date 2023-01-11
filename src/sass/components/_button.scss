@@ -1,0 +1,23 @@
+.accent-button {
+  @extend %btn-base;
+  @extend %btn-fill;
+  width: 152px;
+  height: 42px;
+  line-height: 1.28;
+}
+
+.button-icon__container {
+  margin-left: 8px;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-icon {
+  color: inherit;
+  width: 12px;
+  height: 12px;
+  background-color: currentColor;
+  mask-image: url('../images/header/arrow.svg');
+}
