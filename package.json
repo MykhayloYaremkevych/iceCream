@@ -1,5 +1,5 @@
 {
-  "name": "parcel-project-template",
+  "name": "iceCream",
   "version": "2.0.0",
   "description": "",
   "homepage": "https://Mykhaylo33.github.io/iceCream",
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://Mykhaylo33/goitacademy/iceCream.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://Mykhaylo33/goitacademy/iceCream/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
