@@ -1,3 +1,86 @@
+.header {
+  background-color: $background-color;
+}
+
+.header-menu {
+  margin-top: 20px;
+  display: flex;
+  position: relative;
+  height: 44px;
+  align-items: center;
+
+  &.opened .menu-open {
+    display: none;
+  }
+
+  &.opened .header-button--desktop {
+    display: none;
+  }
+
+  .menu-open {
+    display: block;
+  }
+
+  .menu-close {
+    display: none;
+  }
+
+  &.opened .menu-close {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 65px;
+    align-items: flex-end;
+    .menu-open {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    height: 37px;
+  }
+}
+
 .logo {
-  text-decoration: none;
+  display: block;
+  height: 65;
+  width: 60px;
+  background-image: url('../images/header/logo-desktop.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  @media screen and (max-width: 1199px) {
+    height: 48px;
+    width: 44px;
+    background-image: url('../images/header/logo.png');
+  }
+  @media screen and (max-width: 479px) {
+    height: 40px;
+    width: 37px;
+  }
+}
+
+.navigation {
+  margin: 0 205px 0 308px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  &__list {
+    display: flex;
+    gap: 28px;
+  }
+  &__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $white;
+    white-space: nowrap;
+    &:hover,
+    &:focus {
+      outline: none;
+      color: $accent-color;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 }
