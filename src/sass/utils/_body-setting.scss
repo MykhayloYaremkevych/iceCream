@@ -4,5 +4,9 @@ body {
   background-color: $background-color;
   margin-left: auto;
   margin-right: auto;
-
 }
+
+ .scroll-block {
+  overflow: hidden;
+} 
+ 
