@@ -1,0 +1,50 @@
+.about {
+	background-color: rgba(132, 161, 120, 1);
+  padding-top: 61px;
+  padding-bottom: 64px;
+  @include mobile {
+    padding-top: 61px;
+    padding-bottom: 60px;
+  }
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 204px;
+  }
+  @include desktop {
+    padding-top: 60px;
+    padding-bottom: 178px;
+  }
+}
+
+.about-label {
+	font-family: 'Montserrat';
+	text-align: center;
+	margin-bottom: 12px;
+	text-transform: uppercase;
+	color: rgba(252, 252, 252, 1);
+  @include font(700, 18px, 1.222, 0.04em);
+	@include tablet {
+		@include font(800, 22px, 1.227, 0.04em);
+	}
+			@include desktop {
+		@include font(800px, 30px, 1.233, 0.04em);
+	}
+}
+
+.about-title {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Seymour One';
+	text-align: center;
+	text-transform: uppercase;
+	color:rgba(252, 252, 252, 1);
+  @include font(400, 30px, 1.266, 0.04em);
+		@include tablet {
+		@include font(400px, 34px, 1.2647, 0.04em);
+		width: 100%;
+	}
+		@include desktop {
+		@include font(400px, 36px, 1.25, 0.04em);
+	}
+}
