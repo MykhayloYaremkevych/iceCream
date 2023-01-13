@@ -27,6 +27,11 @@
 
   &.opened .menu-close {
     display: block;
+    z-index: 1500;
+  }
+
+  &.opened .logo {
+    z-index: 1500;
   }
 
   @media screen and (min-width: 1200px) {
@@ -46,14 +51,13 @@
   display: block;
   height: 65;
   width: 60px;
-  background-image: url('../images/header/logo-desktop.png');
-  background-size: contain;
+  background-image: url('../images/header/logo.png');
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   @media screen and (max-width: 1199px) {
     height: 48px;
     width: 44px;
-    background-image: url('../images/header/logo.png');
   }
   @media screen and (max-width: 479px) {
     height: 40px;
