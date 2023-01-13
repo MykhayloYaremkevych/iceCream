@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://Mykhaylo33/goitacademy/iceCream.git"
+    "url": "git+https://github.com/Mykhaylo33/iceCream.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://Mykhaylo33/goitacademy/iceCream/issues"
+    "url": "https://github.com/Mykhaylo33/iceCream/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
