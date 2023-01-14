@@ -1,5 +1,5 @@
 .about {
-	background-color: rgba(132, 161, 120, 1);
+  background-color: rgba(132, 161, 120, 1);
   padding-top: 61px;
   padding-bottom: 64px;
   @include mobile {
@@ -17,34 +17,169 @@
 }
 
 .about-label {
-	font-family: 'Montserrat';
-	text-align: center;
-	margin-bottom: 12px;
-	text-transform: uppercase;
-	color: rgba(252, 252, 252, 1);
+  font-family: 'Montserrat';
+  text-align: center;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  color: rgba(252, 252, 252, 1);
   @include font(700, 18px, 1.222, 0.04em);
-	@include tablet {
-		@include font(800, 22px, 1.227, 0.04em);
-	}
-			@include desktop {
-		@include font(800px, 30px, 1.233, 0.04em);
-	}
+  @include tablet {
+    @include font(800, 22px, 1.227, 0.04em);
+  }
+  @include desktop {
+    @include font(800px, 30px, 1.233, 0.04em);
+  }
 }
 
 .about-title {
-	width: 200px;
-	margin-left: auto;
-	margin-right: auto;
-	font-family: 'Seymour One';
-	text-align: center;
-	text-transform: uppercase;
-	color:rgba(252, 252, 252, 1);
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  font-family: 'Seymour One';
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(252, 252, 252, 1);
   @include font(400, 30px, 1.266, 0.04em);
-		@include tablet {
-		@include font(400px, 34px, 1.2647, 0.04em);
-		width: 100%;
+  @include tablet {
+    @include font(400px, 34px, 1.2647, 0.04em);
+    width: 100%;
+    margin-bottom: 72px;
+  }
+  @include desktop {
+    @include font(400px, 36px, 1.25, 0.04em);
+    margin-bottom: 82px;
+  }
+}
+
+.about-picture {
+	border-radius: 50%;
+}
+
+.about-info__discription {
+  display: flex;
+  flex-direction: column;
+	align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 220px;
+  color: #fcfcfc;
+  text-align: center;
+  font-family: 'Montserrat';
+  @include font(400, 12px, 176%, 0.04em);
+}
+.about-info__text {
+	margin-bottom: 4px;
+}
+
+.about-info__more {
+margin-bottom: 24px;
+}
+
+.about-info__extra {
+	display: none;
+	@include tablet {
+		display: block;
+		margin-bottom: 32px;
 	}
-		@include desktop {
-		@include font(400px, 36px, 1.25, 0.04em);
+	@include desktop {
+		margin-bottom: 54px;
 	}
+}
+
+.about-read-more {
+	width: 164px;
+	height: 42px;
+}.about {
+  background-color: rgba(132, 161, 120, 1);
+  padding-top: 61px;
+  padding-bottom: 64px;
+  @include mobile {
+    padding-top: 61px;
+    padding-bottom: 60px;
+  }
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 204px;
+  }
+  @include desktop {
+    padding-top: 60px;
+    padding-bottom: 178px;
+  }
+}
+
+.about-label {
+  font-family: 'Montserrat';
+  text-align: center;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  color: rgba(252, 252, 252, 1);
+  @include font(700, 18px, 1.222, 0.04em);
+  @include tablet {
+    @include font(800, 22px, 1.227, 0.04em);
+  }
+  @include desktop {
+    @include font(800px, 30px, 1.233, 0.04em);
+  }
+}
+
+.about-title {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  font-family: 'Seymour One';
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(252, 252, 252, 1);
+  @include font(400, 30px, 1.266, 0.04em);
+  @include tablet {
+    @include font(400px, 34px, 1.2647, 0.04em);
+    width: 100%;
+    margin-bottom: 72px;
+  }
+  @include desktop {
+    @include font(400px, 36px, 1.25, 0.04em);
+    margin-bottom: 82px;
+  }
+}
+
+.about-picture {
+	border-radius: 50%;
+}
+
+.about-info__discription {
+  display: flex;
+  flex-direction: column;
+	align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 220px;
+  color: #fcfcfc;
+  text-align: center;
+  font-family: 'Montserrat';
+  @include font(400, 12px, 176%, 0.04em);
+}
+.about-info__text {
+	margin-bottom: 4px;
+}
+
+.about-info__more {
+margin-bottom: 24px;
+}
+
+.about-info__extra {
+	display: none;
+	@include tablet {
+		display: block;
+		margin-bottom: 32px;
+	}
+	@include desktop {
+		margin-bottom: 54px;
+	}
+}
+
+.about-read-more {
+	width: 164px;
+	height: 42px;
 }
