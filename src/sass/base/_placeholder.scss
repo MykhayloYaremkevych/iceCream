@@ -20,6 +20,9 @@
   border-radius: 10px;
   color: rgba(0, 0, 0, 1);
   background-color: transparent;
+  transition-property: color, background-color, border-color;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in;
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;

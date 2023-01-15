@@ -1,3 +1,7 @@
+* {
+  cursor: url('../images/cursor.svg'), auto;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: $color-primary;
@@ -6,7 +10,6 @@ body {
   margin-right: auto;
 }
 
- .scroll-block {
+.scroll-block {
   overflow: hidden;
-} 
- 
+}
