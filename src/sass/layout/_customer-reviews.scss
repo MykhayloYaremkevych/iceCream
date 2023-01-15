@@ -87,4 +87,10 @@
     position: sticky;
 }
 
-
+.pages {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: red;
+}
