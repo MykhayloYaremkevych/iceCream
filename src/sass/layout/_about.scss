@@ -167,3 +167,71 @@
   width: 164px;
   height: 42px;
 }
+
+
+
+
+
+
+// .backdrop {
+//   position: fixed;
+//   top: 0;
+//   height: 100%;
+//   width: 100%;
+//   background-color: rgba(0, 0, 0, 0.2);
+//   transition: opacity 350ms linear, visibility 350ms linear;
+//   &.is-hidden .modal {
+//     transform: translate(-50%, -50%) scaleY(0);
+//   }
+// }
+
+// .read-more-modal__container {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   width: 280px;
+//   height: 459px;
+//   background-color: #fcfcfc;
+//   border: 2px solid #f8d24e;
+//   border-radius: 10px;
+//   padding: 28px 28px;
+//   text-align: center;
+//   transform: translate(-50%, -50%);
+//   transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+
+// .read-more-close {
+// 	width: 30px;
+// 	height: 30px;
+// 	border: 1px solid rgba(0, 0, 0, 0.1);
+// 	border-radius: 50%;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	background-color: var(--pimmary-white-color);
+// 	position: absolute;
+// 	right: 8px;
+// 	top: 8px;
+// 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// 	&:focus {
+// 		fill: var(--accent-color);
+// 	}
+// 	&:hover {
+// 		fill: var(--accent-color);
+// 	}
+
+// 	&:hover .modal-close-icon {
+// 		fill: var(--accent-color);
+// 	}
+
+// 	&:focus .modal-close-icon {
+// 		fill: var(--accent-color);
+// 	}
+// }
+
+// .is-hidden {
+// 	opacity: 0;
+// 	visibility: hidden;
+// 	pointer-events: none;
+// }
