@@ -1,0 +1,103 @@
+.buy-now-modal__container {
+  position: fixed;
+  width: 280px;
+  height: 991px;
+  background-color: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  padding: 28px 28px;
+  text-align: center;
+}
+.buy-now__title {
+  font-family: Seymour One;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.buy-now__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+.buy-now__item::before {
+  background-image: url('../images/buy-now-modal/ice-cream-1x.png');
+  width: 132px;
+  height: 132px;
+}
+.buy-now__box {
+  position: relative;
+  box-sizing: border-box;
+  width: 132px;
+  height: 136px;
+}
+.buy-now__item::before {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.buy-now__box-1 {
+  border: 2px solid #96af8c;
+  border-radius: 15px;
+}
+.buy-now__box-2 {
+  background: #efd478;
+  border: 2px solid #efd478;
+  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+  border-radius: 15px;
+}
+.buy-now__box-3 {
+  border: 2px solid #d6936d;
+  border-radius: 15.7808px;
+}
+.buy-now-form__field {
+  margin-bottom: 12px;
+}
+.buy-now-form__field input {
+  width: 220px;
+  height: 32px;
+  padding: 8px 12px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  outline: none;
+  color: #131313;
+}
+.buy-now-form__field ::placeholder {
+  color: #131313;
+}
+.buy-now-form__field__comment {
+  margin-bottom: 26px;
+  color: #131313;
+}
+.buy-now-form__field__comment textarea {
+  padding: 8px 12px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  outline: none;
+}
+.comment__placeholder {
+  width: 220px;
+  height: 65px;
+  resize: none;
+  color: #131313;
+}
+.submission__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 114px;
+  height: 42px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f8d24e;
+  border-radius: 10px;
+  border-color: #f8d24e;
+  &:hover,
+  &:focus {
+    background-color: #0a8817;
+  }
+}
