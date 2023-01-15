@@ -4,13 +4,38 @@
     <h2 class="about-title">how it`s made?</h2>
     <div class="about-info">
       <div class="about-picture">
-        <img
-          class="about-picture-cow"
-          src="./images/about/cow-min-1x.png"
-          alt="cow-on-the-field"
-          width="279"
-          height="278"
-        />
+        <picture>
+          <source
+            srcset="
+              ./images/about/cow-desktop-1x.png 1x,
+              ./images/about/cow-desktop-2x.png 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/about/cow-tablet-1x.png 1x,
+              ./images/about/cow-tablet-2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/about/cow-mob-1x.png 1x,
+              ./images/about/cow-mob-2x.png 2x
+            "
+            media="(min-width:480px)"
+          />
+          <img
+            class="about-picture-cow"
+            srcset="
+              ./images/about/cow-min-1x.png 1x,
+              ./images/about/cow-min-2x.png 2x
+            "
+            src="./images/about/cow-min-1x.png"
+            alt="cow-on-the-field"
+          />
+        </picture>
       </div>
       <div class="about-info__discription">
         <p class="about-info__text">
@@ -27,7 +52,12 @@
         <p class="about-info__extra">
           This is enough to choose ice cream and coffee for any mood!
         </p>
-        <button class="about-read-more header-button" type="button">
+        <button
+          class="js-open-modal header-button"
+          data-modal="1"
+          <!-- class="about-read-more header-button" -->
+          type="button"
+        >
           Read more<span class="header-button__icon-container">
             <i class="header-button__icon"></i>
           </span>
