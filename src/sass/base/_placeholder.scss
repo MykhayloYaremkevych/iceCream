@@ -1,3 +1,9 @@
+%inline-flex-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 %btn-menu {
   display: block;
   margin-left: auto;
@@ -9,14 +15,13 @@
 }
 
 %btn-base {
+  @extend %inline-flex-center;
   cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 10px;
-  padding: 12px 0;
   color: rgba(0, 0, 0, 1);
   background-color: transparent;
+  font-size: 14px;
+  line-height: 1.2;
   font-weight: 600;
   &:focus {
     color: $white;
@@ -33,6 +38,17 @@
   }
   &:disabled {
     background-color: $button-disabled;
+  }
+}
+
+%btn-outlined {
+  border: 2px solid $accent-color;
+  &:hover,
+  &:focus {
+    border-color: $button-hover;
+  }
+  &:disabled {
+    border-color: $button-disabled;
   }
 }
 
