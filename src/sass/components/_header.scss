@@ -80,6 +80,7 @@
     line-height: 1.25;
     color: $white;
     white-space: nowrap;
+    transition: color 0.25s ease-in;
     &:hover,
     &:focus {
       outline: none;
