@@ -1,0 +1,49 @@
+<section class="locations-franchise-modal">
+  <a href="#" class="js-open-modal" data-modal="11">Our Locations</a>
+  <a href="#" class="js-open-modal" data-modal="12">Franchise modal</a>
+  <!--Our Locations modal-->
+  <div class="modal" data-modal="11">
+    <h4 class="modal__heading">Our Locations</h4>
+    <div class="modal__map"></div>    
+    <button type="submit" class="form-send-btn">Open map</button>    
+    <button type="button" class="modal__cross js-modal-close"><svg width="24" height="24" class="icon-cross">
+        <use href="./images/modal/icons.svg#icon-cross"></use>
+      </svg></button>
+  </div>
+  <!--Franchise modal-->
+  <div class="modal" data-modal="12">
+    <h4 class="modal__heading">Thank you for your interest in owning an Ice Cream shop</h4>
+    <p>Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time.
+      Once
+      the application process resumes, we will contact you for further information. Please fill out the contact
+      information
+      below and we will reach out for additional information. We appreciate your patience.</p>
+    <form action="#" class="modal__lab-form">
+      <div class="modal__input-group">
+        <div class="modal__input-wrapper">
+          <input type="text" class="modal__input" placeholder="Name" name="name" required autofocus>
+        </div>
+      </div>
+      <div class="modal__input-group">
+        <div class="modal__input-wrapper">
+          <input type="tel" class="modal__input" placeholder="Phone" name="tel" required>
+        </div>
+      </div>
+      <div class="modal__input-group">
+        <div class="modal__input-wrapper">
+          <input type="email" class="modal__input" placeholder="Email" name="email" required>
+        </div>
+      </div>
+      <div class="modal__input-group">
+        <textarea name="coment" id="coment" class="modal__text" placeholder="Comment"></textarea>
+      </div>
+      <button type="submit" class="form-send-btn">Submit</button>
+    </form>
+    <button type="button" class="modal__cross js-modal-close"><svg width="24" height="24" class="icon-cross">
+        <use href="./images/modal/icons.svg#icon-cross"></use>
+      </svg></button>
+  </div>
+  <!-- Підклвдкаа під модальне вікно -->
+  <div class="overlay js-overlay-modal"></div>
+  <!-- <script src="./js/modal.js"></script> -->
+</section>
