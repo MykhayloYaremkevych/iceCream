@@ -29,6 +29,6 @@
     mobileMenu.classList.add('is-hidden');
     headerContainer.setAttribute('aria-expanded', false);
     body.classList.remove('scroll-block');
-    /* bodyScrollLock.enableBodyScroll(document.body); */
+    bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
