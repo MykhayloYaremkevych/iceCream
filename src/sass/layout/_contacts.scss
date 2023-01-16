@@ -106,7 +106,7 @@
 }
 .contacts-card__timetable {
   line-height: 186%;
-  color: #131313;
+  color: $color-primary;
   padding-top: 24px;
   padding-bottom: 24px;
   margin-bottom: 24px;
@@ -148,11 +148,20 @@
   margin-bottom: 16px;
   width: 196px;
   height: 42px;
+  color: $color-primary;
   background-color: #F8D24E;
   border: 2px solid transparent;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
+  &:hover {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(10, 136, 23, 1);
+  }
+  &:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(10, 136, 23, 1);
+  }
   @include tablet {
   display: inline-block;
   margin-right: 16px;
@@ -167,11 +176,19 @@
   display: block;
   width: 196px;
   height: 42px;
+  color: $color-primary;
   background-color: transparent;
   border: 2px solid #F8D24E;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
+  &:hover {
+    border: 2px solid rgba(10, 136, 23, 1);
+  }
+  &:focus {
+    color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(10, 136, 23, 1);
+  }
   @include tablet {
   display: inline-block;
   }
