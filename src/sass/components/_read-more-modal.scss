@@ -13,6 +13,11 @@
 .about-vid {
   border-radius: 10px;
   margin-bottom: 20px;
+  @include tablet {
+    width: 448px;
+    height: 205px;
+    margin-bottom: 32px;
+  }
 }
 
 /* Стили для подложки */
@@ -81,10 +86,19 @@
   right: 12px;
   fill: rgb(0, 0, 0);
   cursor: pointer;
+  @include tablet {
+    width: 13px;
+    height: 13px;
+  }
 }
 
 .read-more-modal__text {
-	color: $color-primary;
-	@include font(400, 14px, 140%, null);
-	font-family: 'Montserrat';
+  color: $color-primary;
+  @include font(400, 14px, 140%, null);
+  font-family: 'Montserrat';
+  text-align: left;
+  @include tablet {
+    width: 448px;
+    @include font(400, 16px, 140%, null);
+  }
 }
