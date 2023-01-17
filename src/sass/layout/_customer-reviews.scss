@@ -1,101 +1,193 @@
 .customer-reviews {
-    padding-top: 80px;
-    padding-bottom: 40px;
-    background-image: url(../images/reviews/bg/img_desk@1x.png);
-    background-color: #fcfcfc;
+  background-color: $background-color;
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-image: url('../images/reviews/bg/bg_mobile_1x.jpg');
+  padding-top: 28px;
+  height: 1159px;
+  background-position: center 28px;
 
-    @media screen and (min-width: 768px) {
-        padding-top: 100px;
-        padding-bottom: 80px;
-    }
+  /*  @media screen and (min-width: 480px) {
+    background-image: url('../images/reviews/bg/bg_mobile_1x.jpg');
+    padding-top: 28px;
+    height: 1159px;
+    background-position: 0 28px;
+  } */
 
-    @media screen and (min-width: 1200px) {
-        padding-top: 140px;
-        padding-bottom: 100px;
-    }
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/reviews/bg/bg_tablet_1x.jpg');
+    padding-top: 144px;
+    height: 1161px;
+    background-position: center 144px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/reviews/bg/bg_desktop_1x.jpg');
+    padding-top: 98px;
+    height: 1151px;
+    background-position: center 98px;
+  }
 }
 
 .reviews {
-    padding-inline: 22px;
-    width: 100%;
-    
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }
+  padding-inline: 22px;
+  width: 100%;
 
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
-}
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 
-.swiper {
-    width: 100%;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .review__photo {
-    margin-bottom: 32px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
 }
 
 .review__text {
-    margin-bottom: 32px;
-    padding: 15px 20px;
-    border-radius: 10px;
+  margin: 0 auto 32px;
+  border-radius: 10px;
+  background-color: $background-color;
+  color: $secondary-text-color;
+  font-weight: 500;
+  line-height: 2.55;
+  letter-spacing: 0.04;
+  text-align: center;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  height: 256px;
+  width: 280px;
+  padding: 35px 39px;
+  font-size: 12px;
 
+  /*  @media screen and (min-width: 480px) {
+    width: 280px;
+    padding: 35px 39px;
     font-size: 12px;
-    line-height: 2.55;
+  } */
 
-    text-align: center;
+  @media screen and (min-width: 768px) {
+    width: 705px;
+    height: 138px;
+    padding: 28px 80px 29px;
+    font-size: 14px;
+    line-height: 1.85;
+  }
 
-    @media screen and (min-width: 480px) {
-        padding: 35px 39px;
-    }
-
-    @media screen and (min-width: 768px) {
-        padding: 28px 80px;
-        border-radius: 24px;
-
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.86;
-    }
-
-    @media screen and (min-width: 1200px) {
-        padding: 43px 109px;
-
-        font-weight: 500;
-        font-size: 16px;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 968px;
+    padding: 43px 109px;
+    font-size: 16px;
+  }
 }
 
 .review__blogger {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.86;
-    text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+  text-align: center;
 
-    @media screen and (min-width: 768px) {
-        font-size: 16px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    height: 25px;
+  }
 }
 
 .swiper-pages {
-    display: flex;
-    justify-content: space-between;
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .page {
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    outline: 2px solid red;
-    border-radius: 50%;
-    
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  outline: 2px solid red;
+  border-radius: 50%;
+}
+
+.swiper-reviews {
+  position: relative;
+  border-radius: 8px;
+  margin: 0 auto;
+  overflow-x: hidden !important;
+  padding-bottom: 24px;
+  margin-top: -28px;
+  /*  @media screen and (min-width: 480px) {
+    width: 704px;
+    margin-top: -28px;
+  }
+ */
+  @media screen and (min-width: 768px) {
+    /* width: 704px; */
+    border-radius: 18px;
+    padding-bottom: 50px;
+    margin-top: -144px;
+  }
+  @media screen and (min-width: 1200px) {
+    border-radius: 24px;
+    /* width: 1013px; */
+    margin-top: -98px;
+  }
+}
+
+.swiper-slide__content {
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 704px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1013px;
+  }
+}
+
+.swiper-pagination-bullets.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(217, 217, 217, 1);
+  opacity: 1;
+}
+
+.swiper-horizontal
+  .swiper-pagination-bullet.swiper-pagination-bullet:not(:last-child) {
+  margin-right: 18px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: $background-color;
+}
+
+.gallery__img {
+  border-radius: 8px;
+  margin-bottom: 80px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 80px;
+  }
+
+  @media screen and (min-width: 768px) {
+    border-radius: 18px;
+    margin-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    border-radius: 24px;
+    margin-bottom: 140px;
+  }
 }

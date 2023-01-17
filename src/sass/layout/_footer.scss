@@ -13,7 +13,7 @@
 .footer-social {
   display: flex;
   @include tablet {
-    padding-top: 101px;
+  padding-top: 101px;
   }
 
 }
@@ -21,12 +21,14 @@
   // margin-right: auto;
   max-width: 232px;
   margin-bottom: 60px;
-  color: $white;
+  color: rgba(252, 252, 252, 1);
  @include tablet{
   max-width: 352px;
+  margin-bottom: 0;
  }
  @include desktop {
   max-width: 504px;
+  margin-bottom: 0;
  }
 
 }
@@ -77,6 +79,7 @@
 }
 .footer-social__item {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin-bottom: 20px;
   width: 34px;
@@ -90,6 +93,7 @@
     
 }
 .footer-social__icons {
+  display: block;
   fill: $background-color;
   &:hover {
     fill: $white;
@@ -116,11 +120,19 @@ fill: $white;
   padding-bottom: 24px;
   border-top: 1px solid rgba(225, 225, 225, 1);
   @include tablet {
+ 
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 12px;
   padding-bottom: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+  }
+  @include desktop{
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
   }
   
 }

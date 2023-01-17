@@ -1,3 +1,4 @@
+
 .overlay {
 
   /* Ховаємо підкладку */
@@ -136,7 +137,7 @@
     line-height: 1.4;
     color: $color-primary;
 
-    transform: border-color 250ms $timing-function;
+    transform: border-color 250ms ease-in;
   }
 
   &__input::placeholder {
@@ -237,7 +238,7 @@
   text-align: center;  
   color: $color-primary;
 
-  transition: color 250ms $timing-function;
+  transition: color 250ms ease-in;
 
   &:hover,
   &:focus {
