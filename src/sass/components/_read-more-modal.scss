@@ -3,6 +3,21 @@
   font-family: 'Seymour One';
   @include font(400, 16px, 1.5, null);
   text-align: center;
+  margin-bottom: 20px;
+  @include tablet {
+    @include font(400, 20px, 1.4, null);
+    margin-bottom: 32px;
+  }
+}
+
+.about-vid {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  @include tablet {
+    width: 448px;
+    height: 205px;
+    margin-bottom: 32px;
+  }
 }
 
 /* Стили для подложки */
@@ -10,7 +25,7 @@
 .overlay {
   /* Скрываем подложку  */
   opacity: 0;
-  visibility: visible;
+  visibility: hidden;
 
   position: fixed;
   top: 0;
@@ -24,14 +39,18 @@
 
 /* Стили для модальных окон */
 
-.modal {
+.read-more-modal .modal {
   /* Скрываем окна  */
   opacity: 0;
-  visibility: visible;
+  visibility: hidden;
 
   /*  Установаем ширину окна  */
   width: 280px;
   height: 459px;
+  @include tablet {
+    width: 568px;
+    height: 449px;
+  }
   background-color: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
@@ -59,12 +78,27 @@
 
 /* Стили для кнопки закрытия */
 
-.modal__cross {
-  width: 15px;
-  height: 15px;
+.read-more-modal .modal__cross {
+  width: 12px;
+  height: 12px;
   position: absolute;
-  top: 20px;
-  right: 20px;
-  fill: #444;
+  top: 12px;
+  right: 12px;
+  fill: rgb(0, 0, 0);
   cursor: pointer;
+  @include tablet {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+.read-more-modal__text {
+  color: $color-primary;
+  @include font(400, 14px, 140%, null);
+  font-family: 'Montserrat';
+  text-align: left;
+  @include tablet {
+    width: 448px;
+    @include font(400, 16px, 140%, null);
+  }
 }

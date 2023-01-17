@@ -15,18 +15,20 @@
 
 .contacts-box {
   padding-bottom: 6px;
-  @include tablet {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    padding-bottom: 40px;
+  @include tablet{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 40px;
   }
-  @include desktop {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-    padding-bottom: 60px;
+  @include desktop{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding-bottom: 60px;
   }
+  
+ 
 }
 .contacts-card {
   max-width: 280px;
@@ -37,7 +39,7 @@
   padding-left: 32px;
   padding-right: 32px;
   &:not(last child) {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
   }
   background-color: white;
   border-radius: 24px;
@@ -46,30 +48,31 @@
   font-weight: 500;
   font-size: 12px;
   @include tablet {
-    padding-bottom: 40px;
-    padding-left: 24px;
-    padding-right: 24px;
-    flex-basis: calc((100% - 32px) / 3);
-    font-size: 14px;
-    letter-spacing: 0.04em;
+  padding-bottom: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+  flex-basis: calc((100% - 32px) / 3);
+  font-size: 14px;
+  letter-spacing: 0.04em;
   }
   @include desktop {
-    max-width: 100%;
-    flex-basis: calc((100% - 64px) / 3);
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    font-size: 16px;
-    letter-spacing: 0.04em;
+  max-width: 100%;
+  flex-basis: calc((100% - 64px) / 3);
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  font-size: 16px;
+  letter-spacing: 0.04em;
   }
 }
 .contacts-card__type {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  @include tablet {
-    margin-bottom: 32px;
+  @include tablet{
+  margin-bottom: 32px;
   }
+  
 }
 .contacts-place {
   display: block;
@@ -94,11 +97,11 @@
   margin-bottom: 8px;
   line-height: 186%;
   color: $color-primary;
-  @include tablet {
-    margin-bottom: 12px;
+  @include tablet{
+  margin-bottom: 12px;
   }
-  @include desktop {
-    margin-bottom: 8px;
+  @include desktop{
+  margin-bottom: 8px;
   }
 }
 .contacts-card__adress {
@@ -106,37 +109,38 @@
   padding-bottom: 24px;
   line-height: 183%;
   color: rgba(214, 147, 109, 1);
-  @include tablet {
-    margin-bottom: 32px;
-    padding-right: 12px;
+  @include tablet{
+  margin-bottom: 32px;
+  padding-right: 12px;
   }
-
-  @include desktop {
-    margin-bottom: 32px;
-    padding-right: 40px;
+ 
+  @include desktop{
+  margin-bottom: 32px;
+  padding-right: 40px;
   }
 }
 .contacts-card__timetable {
   line-height: 186%;
-  color: #131313;
+  color: $color-primary;
   padding-top: 24px;
   padding-bottom: 24px;
   margin-bottom: 24px;
   border-bottom: 1px solid rgba(225, 225, 225, 1);
   border-top: 1px solid rgba(225, 225, 225, 1);
-  @media screen and (min-width: 768px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin-bottom: 32px;
+  @media screen and (min-width: 768px){
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
   }
+  
 }
 .contacts-card__timetable-color {
   color: rgba(144, 126, 130, 1);
 }
 .timetable-distance {
   margin-bottom: 8px;
-  @include tablet {
-    margin-bottom: 12px;
+  @include tablet{
+  margin-bottom: 12px;
   }
 }
 
@@ -147,8 +151,8 @@
 .contacts-card__tel {
   margin-bottom: 6px;
   color: $color-primary;
-  @include tablet {
-    margin-bottom: 4px;
+  @include tablet{
+  margin-bottom: 4px;
   }
 }
 .contacts-card-info__mail {
@@ -159,31 +163,48 @@
   margin-bottom: 16px;
   width: 196px;
   height: 42px;
-  background-color: #f8d24e;
+  color: $color-primary;
+  background-color: #F8D24E;
   border: 2px solid transparent;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
+  &:hover {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(10, 136, 23, 1);
+  }
+  &:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(10, 136, 23, 1);
+  }
   @include tablet {
-    display: inline-block;
-    margin-right: 16px;
-    margin-left: 165px;
-    margin-bottom: 0;
+  display: inline-block;
+  margin-right: 16px;
+  margin-left: 165px;
+  margin-bottom: 0;
   }
   @include desktop {
-    margin-left: 381px;
+  margin-left: 381px;
   }
 }
 .contacts-button-franchise {
   display: block;
   width: 196px;
   height: 42px;
+  color: $color-primary;
   background-color: transparent;
-  border: 2px solid #f8d24e;
+  border: 2px solid #F8D24E;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
+  &:hover {
+    border: 2px solid rgba(10, 136, 23, 1);
+  }
+  &:focus {
+    color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(10, 136, 23, 1);
+  }
   @include tablet {
-    display: inline-block;
+  display: inline-block;
   }
 }
