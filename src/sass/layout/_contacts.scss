@@ -177,6 +177,9 @@
     color: rgba(255, 255, 255, 1);
     background-color: rgba(10, 136, 23, 1);
   }
+  &:disabled {
+    color: rgba(171, 171, 171, 1);
+  }
   @include tablet {
   display: inline-block;
   margin-right: 16px;
@@ -203,6 +206,9 @@
   &:focus {
     color: rgba(255, 255, 255, 1);
     border: 2px solid rgba(10, 136, 23, 1);
+  }
+  &:disabled {
+    color: rgba(171, 171, 171, 1);
   }
   @include tablet {
   display: inline-block;
