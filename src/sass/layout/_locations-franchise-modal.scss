@@ -10,7 +10,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: $background-color;
+  background-color: transparent;
   z-index: 20;
   transition: .3s all;
   overflow-y: scroll;
@@ -27,7 +27,7 @@
   height: auto;
 
   /*  Центрируємом и задаємо z-index вищий за підкладку*/
-  position: center;
+  position: fixed;
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
