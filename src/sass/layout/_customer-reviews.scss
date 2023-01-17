@@ -121,16 +121,15 @@
 .swiper-reviews {
   position: relative;
   border-radius: 8px;
-  /* width: 1013px; */
   margin: 0 auto;
   overflow-x: hidden !important;
   padding-bottom: 24px;
   margin-top: -28px;
-  @media screen and (min-width: 480px) {
-    /* width: 704px; */
-    /* margin-top: -28px; */
+  /*  @media screen and (min-width: 480px) {
+    width: 704px;
+    margin-top: -28px;
   }
-
+ */
   @media screen and (min-width: 768px) {
     /* width: 704px; */
     border-radius: 18px;
