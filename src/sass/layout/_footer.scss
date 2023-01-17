@@ -120,11 +120,19 @@ fill: $white;
   padding-bottom: 24px;
   border-top: 1px solid rgba(225, 225, 225, 1);
   @include tablet {
+ 
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 12px;
   padding-bottom: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+  }
+  @include desktop{
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
   }
   
 }
