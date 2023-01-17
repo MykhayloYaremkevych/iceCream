@@ -109,6 +109,12 @@
   padding-bottom: 24px;
   line-height: 183%;
   color: rgba(214, 147, 109, 1);
+
+  &:hover {
+    text-decoration: underline;
+    color: rgba(214, 147, 109, 1);
+  }
+
   @include tablet{
   margin-bottom: 32px;
   padding-right: 12px;
