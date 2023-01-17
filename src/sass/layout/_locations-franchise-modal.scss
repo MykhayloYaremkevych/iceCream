@@ -1,5 +1,5 @@
-
 .overlay {
+
 
   /* Ховаємо підкладку */
   opacity: 0;
@@ -15,6 +15,7 @@
   transition: .3s all;
   overflow-y: scroll;
 }
+
 
 .modal {
   /* Ховаєм вікна */
@@ -165,14 +166,12 @@
   }
 }
 
+
 .modal.active,
 .overlay.active {
   opacity: 1;
   visibility: visible;  
 }
-
-// .modal__input-group:last-child {
-//   margin-bottom: 24px;
 
 //   @media screen and (min-width: 768px) {
 //     margin-bottom: 32px;
@@ -262,3 +261,4 @@
     fill: $button-hover;
   }
 }
+
