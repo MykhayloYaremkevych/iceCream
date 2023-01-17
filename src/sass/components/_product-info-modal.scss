@@ -1,4 +1,4 @@
-.overlay {
+.pr-info-modal__overlay {
 
   /* стилі Backdrop'у  */
   opacity: 0;
@@ -21,7 +21,7 @@
 
 /* стилі модалки */
 
-.modal {
+.pr-info-modal .modal {
 
   opacity: 0;
   visibility: hidden;
@@ -30,7 +30,7 @@
   align-items: center;
 
   position: absolute;
-  top: 85%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30;
@@ -51,6 +51,8 @@
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 32px;
+    top: 50%;
+      left: 50%;
   }
   &.active {
       opacity: 1;
@@ -60,7 +62,7 @@
 
 /* Стилі для кнопки закриття */
 
-.modal__cross {
+.pr-info-modal__cross {
   width: 10px;
   height: 10px;
   position: absolute;
@@ -70,7 +72,7 @@
   cursor: pointer;
 }
 
-.modal__title {
+.pr-info-modal__title {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -92,7 +94,7 @@
 }
 
 
-.modal__img-background {
+.pr-info-modal__img-background {
   position: relative;
   border-radius: 50%;
   margin-bottom: 20px;
@@ -103,7 +105,7 @@
 }
 
 
-.modal__img {
+.pr-info-modal__img {
   position: absolute;
   top: -5%;
   left: 0%;
@@ -112,7 +114,7 @@
 }
 
 
-.modal__list {
+.pr-info-modal__list {
   display: flex;
   
   padding: 0;
@@ -124,39 +126,51 @@
   }
 }
 
-.modal__item {
+.pr-info-modal__item {
   display: block;
   border: 2px solid #9CBE8F;
   border-radius: 40px;
   width: 53px;
   height: 72px;
   position: relative;
-
+  @media screen and (min-width: 768px) {
+    width: 65px;
+      height: 90px;
+  }
 }
 
-.modal__p {
+.pr-info-modal__p {
   position: absolute;
-  font-style: normal;
-  font-weight: 400;
+  
+  font-family: 'Montserrat';
   font-size: 10px;
   line-height: 1.2;
   text-align: center;
   top: 62%;
-  left: 23%;
+  left: 10%;
+  @media screen and (min-width: 768px) {
+        font-style: normal;
+        font-size: 5px;
+        line-height: 1.25;
+    }
 }
 
-.modal__p--small {
+.pr-info-modal__p--small {
   position: absolute;
   font-style: normal;
-  font-weight: 400;
+  font-family: 'Montserrat';
   font-size: 10px;
   line-height: 1.2;
   text-align: center;
   top: 62%;
-  left: 33%;
+  left: 20%;
+  @media screen and (min-width: 768px) {
+      font-size: 5px;
+      line-height: 2.8;
+    }
 }
 
-.modal__item-div {
+.pr-info-modal__item-div {
   width: 43px;
   height: 43px;
   background: #9CBE8F;
@@ -168,23 +182,20 @@
   font-weight: 500;
   font-size: 10px;
   line-height: 2.8;
-
-
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 
 
-.modal__item:not(:last-child) {
+.pr-info-modal__item:not(:last-child) {
   margin-right: 10px;
 }
 
 
 
-.modal__ingredients-list {
+.pr-info-modal__ingredients-list {
   margin-left: 0;
   margin-right: 0;
   width: 100%;
@@ -192,7 +203,7 @@
 
 }
 
-.modal__ingredients-item {
+.pr-info-modal__ingredients-item {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
@@ -203,7 +214,7 @@
     }
 }
 
-.call-form {
+.pr-info-modal__call-form {
   margin-left: auto;
   margin-right: auto;
   

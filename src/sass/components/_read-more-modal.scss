@@ -92,6 +92,10 @@
   }
 }
 
+.modal__cross.js-modal-close {
+  background-color: transparent;
+}
+
 .read-more-modal__text {
   color: $color-primary;
   @include font(400, 14px, 140%, null);
