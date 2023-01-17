@@ -1,3 +1,18 @@
+.contacts {
+  margin-top: -349px;
+  /* @media screen and (min-width: 480px) {
+    margin-top: -349px;
+  } */
+
+  @media screen and (min-width: 768px) {
+    margin-top: -299px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: -80px;
+  }
+}
+
 .contacts-box {
   padding-bottom: 6px;
   @include tablet{
