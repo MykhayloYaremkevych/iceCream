@@ -1,5 +1,5 @@
-
 .overlay {
+
 
   /* Ховаємо підкладку */
   opacity: 0;
@@ -10,11 +10,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: $background-color;
+  background-color: transparent;
   z-index: 20;
   transition: .3s all;
   overflow-y: scroll;
 }
+
 
 .modal {
   /* Ховаєм вікна */
@@ -26,7 +27,7 @@
   height: auto;
 
   /*  Центрируємом и задаємо z-index вищий за підкладку*/
-  position: center;
+  position: fixed;
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
@@ -165,14 +166,12 @@
   }
 }
 
+
 .modal.active,
 .overlay.active {
   opacity: 1;
   visibility: visible;  
 }
-
-// .modal__input-group:last-child {
-//   margin-bottom: 24px;
 
 //   @media screen and (min-width: 768px) {
 //     margin-bottom: 32px;
@@ -262,3 +261,4 @@
     fill: $button-hover;
   }
 }
+
