@@ -1,0 +1,104 @@
+.read-more-modal__title {
+  color: $color-primary;
+  font-family: 'Seymour One';
+  @include font(400, 16px, 1.5, null);
+  text-align: center;
+  margin-bottom: 20px;
+  @include tablet {
+    @include font(400, 20px, 1.4, null);
+    margin-bottom: 32px;
+  }
+}
+
+.about-vid {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  @include tablet {
+    width: 448px;
+    height: 205px;
+    margin-bottom: 32px;
+  }
+}
+
+/* Стили для подложки */
+
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+
+/* Стили для модальных окон */
+
+.read-more-modal .modal {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+
+  /*  Установаем ширину окна  */
+  width: 280px;
+  height: 459px;
+  @include tablet {
+    width: 568px;
+    height: 449px;
+  }
+  background-color: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  padding: 28px 28px;
+  text-align: center;
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  transition: 0.3s all;
+}
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Стили для кнопки закрытия */
+
+.read-more-modal .modal__cross {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  fill: rgb(0, 0, 0);
+  cursor: pointer;
+  @include tablet {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+.read-more-modal__text {
+  color: $color-primary;
+  @include font(400, 14px, 140%, null);
+  font-family: 'Montserrat';
+  text-align: left;
+  @include tablet {
+    width: 448px;
+    @include font(400, 16px, 140%, null);
+  }
+}
