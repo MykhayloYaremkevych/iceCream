@@ -1,23 +1,4 @@
-// .overlay {
-
-
-//   /* Ховаємо підкладку */
-//   opacity: 0;
-//   visibility: hidden;
-
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-color: transparent;
-//   z-index: 20;
-//   transition: .3s all;
-//   overflow-y: scroll;
-// }
-
-
-.modal {
+.blf_modal {
   /* Ховаєм вікна */
   opacity: 0;
   visibility: hidden;
@@ -175,7 +156,7 @@
   visibility: visible;  
 }
 
-.modal__lab-form {
+.blf_modal__lab-form {
   display: block;
   width: 100%;  
   font-weight: 400;
@@ -188,7 +169,7 @@
   }
 }
 
-.modal__text {
+.blf_modal__text {
   width: 100%;
   height: 64px;
   border: 1px solid $background-color;
