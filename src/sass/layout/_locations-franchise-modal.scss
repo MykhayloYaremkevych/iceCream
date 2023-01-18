@@ -27,8 +27,9 @@
   height: auto;
 
   /*  Центрируємом и задаємо z-index вищий за підкладку*/
+
   position: fixed;
-  top: 0;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 30;
@@ -139,6 +140,7 @@
     color: $color-primary;
 
     transform: border-color 250ms ease-in;
+
   }
 
   &__input::placeholder {
@@ -172,11 +174,6 @@
   opacity: 1;
   visibility: visible;  
 }
-
-//   @media screen and (min-width: 768px) {
-//     margin-bottom: 32px;
-//   }
-// }
 
 .modal__lab-form {
   display: block;
@@ -239,6 +236,7 @@
 
   transition: color 250ms ease-in;
 
+
   &:hover,
   &:focus {
     background-color: $button-hover;
@@ -260,7 +258,5 @@
   &:focus {
     fill: $button-hover;
   }
+
 }
-
-
-
