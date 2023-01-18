@@ -107,11 +107,12 @@
   align-content: center;
   align-items: flex-end;
   margin: 0 auto;
-  // margin-top: 30px;
+  // margin-top: 30px;  
+}
 
-  & p {font-weight: 700;
+.buy-now__p {
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
   margin-bottom: 20px;
-  }
 }

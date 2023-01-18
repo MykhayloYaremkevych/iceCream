@@ -141,21 +141,24 @@
 
 .pr-info-modal__p {
   position: absolute;
-  
+  margin-top: 5px;
   font-family: 'Montserrat';
   font-size: 10px;
   line-height: 1.2;
   text-align: center;
   top: 62%;
-  left: 10%;
+  left: 15%;
   @media screen and (min-width: 768px) {
         font-style: normal;
-        font-size: 5px;
+        font-size: 12px;
         line-height: 1.25;
+        top: 61%;
+        left: 13%;
     }
 }
 
 .pr-info-modal__p--small {
+  margin-top: 5px;
   position: absolute;
   font-style: normal;
   font-family: 'Montserrat';
@@ -163,10 +166,12 @@
   line-height: 1.2;
   text-align: center;
   top: 62%;
-  left: 20%;
+  left: 27%;
   @media screen and (min-width: 768px) {
-      font-size: 5px;
+      font-size: 12px;
       line-height: 2.8;
+      top: 50%;
+      left: 24%;
     }
 }
 
