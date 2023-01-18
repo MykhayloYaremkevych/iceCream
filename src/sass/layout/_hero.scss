@@ -3,18 +3,22 @@
   padding-top: 50px;
   height: 453px;
   overflow: hidden;
+
   @media screen and (min-width: 480px) {
     height: 357px;
     padding-top: 40px;
   }
+
   @media screen and (min-width: 768px) {
     height: 349px;
     padding-top: 14px;
   }
+
   @media screen and (min-width: 1200px) {
     height: 591px;
     padding-top: 31px;
   }
+
   &__title {
     font-family: 'Seymour One';
     font-weight: 400;
@@ -27,14 +31,12 @@
 
     @media screen and (min-width: 768px) {
       padding-bottom: 24px;
-      background-image: linear-gradient(
-        -225deg,
-        $secondary-text-color 25%,
-        #f18bd5 25%,
-        #fcb866 50%,
-        #9eecb6 75%,
-        #febfda 100%
-      );
+      background-image: linear-gradient(-225deg,
+          $secondary-text-color 25%,
+          #f18bd5 25%,
+          #fcb866 50%,
+          #9eecb6 75%,
+          #febfda 100%);
       background-size: auto auto;
       background-clip: border-box;
       background-size: 200% auto;
@@ -44,6 +46,7 @@
       -webkit-text-fill-color: transparent;
       animation: textclip 3s linear both;
     }
+
     @media screen and (min-width: 1200px) {
       padding-top: 14px;
       padding-bottom: 28px;
@@ -51,12 +54,14 @@
       line-height: 1.26;
     }
   }
+
   &__accent {
     @media screen and (max-width: 1199px) {
       font-size: 34px;
       line-height: 1;
     }
   }
+
   &__btn {
     @extend %btn-base;
     @extend %btn-outlined;
@@ -64,11 +69,13 @@
     height: 38px;
     margin-right: 12px;
     color: $color-primary;
+
     @media screen and (max-width: 1199px) {
       font-size: 12px;
       line-height: 1.25;
     }
   }
+
   &__link {
     @extend %inline-flex-center;
     width: 100px;
@@ -77,55 +84,68 @@
     text-decoration: underline;
     border-radius: 5px;
     transition: color 0.25s ease-in;
+
     &:hover {
       color: $button-hover;
     }
+
     &:focus {
       outline: 2px solid $secondary-text-color;
       color: $secondary-text-color;
     }
+
     &:disabled {
       border-color: $button-disabled;
     }
+
     @media screen and (min-width: 1200px) {
       width: 154px;
       height: 40px;
     }
+
     @media screen and (max-width: 1199px) {
       font-size: 12px;
       line-height: 1.25;
     }
   }
+
   &__img {
     position: absolute;
     bottom: 0;
-    z-index: 100;
+    z-index: 98;
     -webkit-animation: bounce-in-top 0.6s ease-in-out forwards;
     animation: bounce-in-top 0.6s ease-in-out forwards;
+
     @media screen and (max-width: 479px) {
       right: 60px;
     }
+
     @media screen and (min-width: 480px) {
       right: 20px;
     }
+
     @media screen and (min-width: 768px) {
       right: 92px;
     }
   }
+
   &__svgleft {
     @media screen and (min-width: 768px) {
       display: none;
     }
+
     position: absolute;
     right: 210.69px;
     bottom: 2px;
     -webkit-animation: roll-in-left 0.6s ease-out 0.6s both;
     animation: roll-in-left 0.6s ease-out 0.6s both;
+
     @media screen and (max-width: 479px) {
       width: 107px;
       height: 34px;
     }
   }
+
   &__svgtablet {
     position: absolute;
     width: 110px;
@@ -134,31 +154,38 @@
     left: 0px;
     -webkit-animation: roll-in-left 0.6s ease-out 0.6s both;
     animation: roll-in-left 0.6s ease-out 0.6s both;
+
     @media screen and (max-width: 767px) {
       display: none;
     }
+
     @media screen and (min-width: 1200px) {
       display: none;
     }
   }
+
   &__svgright {
     position: absolute;
     right: 0;
     bottom: 0.5px;
     -webkit-animation: roll-in-right 0.6s ease-out 0.6s both;
     animation: roll-in-right 0.6s ease-out 0.6s both;
+
     @media screen and (max-width: 479px) {
       width: 127px;
       height: 49px;
     }
+
     @media screen and (min-width: 768px) {
       width: 183px;
       height: 68px;
     }
+
     @media screen and (min-width: 1200px) {
       display: none;
     }
   }
+
   &__svgdesktop {
     position: absolute;
     z-index: -1;
@@ -166,47 +193,57 @@
     left: 0px;
     -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+
     @media screen and (max-width: 1199px) {
       display: none;
     }
   }
+
   &__text-container {
     position: absolute;
     bottom: 24px;
     left: 216px;
     height: 113px;
     width: 139;
+
     @media screen and (max-width: 767px) {
       display: none;
     }
+
     @media screen and (min-width: 1200px) {
       left: 257px;
       bottom: 103px;
       width: 200px;
     }
   }
+
   &__text {
     font-size: 12px;
     line-height: 1.4;
     color: $secondary-text-color;
     margin-bottom: 12px;
+
     @media screen and (min-width: 1200px) {
       font-size: 14px;
       margin-bottom: 24px;
     }
   }
+
   &__info {
     position: absolute;
     top: 28px;
     right: 32px;
     text-align: right;
+
     @media screen and (max-width: 767px) {
       display: none;
     }
+
     @media screen and (min-width: 1200px) {
       margin-top: 56px;
     }
   }
+
   &__number {
     font-size: 28px;
     line-height: 1.22;
@@ -215,10 +252,12 @@
     color: $color-primary;
     display: block;
     margin-bottom: 20px;
+
     @media screen and (min-width: 1200px) {
       font-size: 46px;
     }
   }
+
   &__small-text {
     color: $secondary-text-color;
     font-size: 8px;
@@ -226,21 +265,24 @@
     display: block;
     margin-top: 4px;
     line-height: 1.25;
+
     @media screen and (min-width: 1200px) {
       font-size: 14px;
       line-height: 1.2;
     }
   }
+
   &__imgIce {
     position: absolute;
     left: 32px;
     bottom: 12px;
-    -webkit-animation: rotate-in-center 1.5s
-      cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    -webkit-animation: rotate-in-center 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: rotate-in-center 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
     @media screen and (max-width: 767px) {
       display: none;
     }
+
     @media screen and (min-width: 1200px) {
       left: 16px;
       bottom: 65px;
@@ -253,6 +295,7 @@
     opacity: 0;
     transform: scale(0);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -267,6 +310,7 @@
     animation-timing-function: ease-in;
     opacity: 0;
   }
+
   38% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -274,36 +318,42 @@
     animation-timing-function: ease-out;
     opacity: 1;
   }
+
   55% {
     -webkit-transform: translateY(-65px);
     transform: translateY(-65px);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
+
   72% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
+
   81% {
     -webkit-transform: translateY(-28px);
     transform: translateY(-28px);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
+
   90% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
+
   95% {
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
+
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -311,6 +361,7 @@
     animation-timing-function: ease-out;
   }
 }
+
 @keyframes bounce-in-top {
   0% {
     -webkit-transform: translateY(-500px);
@@ -319,6 +370,7 @@
     animation-timing-function: ease-in;
     opacity: 0;
   }
+
   38% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -326,36 +378,42 @@
     animation-timing-function: ease-out;
     opacity: 1;
   }
+
   55% {
     -webkit-transform: translateY(-65px);
     transform: translateY(-65px);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
+
   72% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
+
   81% {
     -webkit-transform: translateY(-28px);
     transform: translateY(-28px);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
+
   90% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
+
   95% {
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
+
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -370,18 +428,21 @@
     transform: translateX(-800px) rotate(-540deg);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: translateX(0) rotate(0deg);
     transform: translateX(0) rotate(0deg);
     opacity: 1;
   }
 }
+
 @keyframes roll-in-left {
   0% {
     -webkit-transform: translateX(-800px) rotate(-540deg);
     transform: translateX(-800px) rotate(-540deg);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: translateX(0) rotate(0deg);
     transform: translateX(0) rotate(0deg);
@@ -395,18 +456,21 @@
     transform: translateX(800px) rotate(540deg);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: translateX(0) rotate(0deg);
     transform: translateX(0) rotate(0deg);
     opacity: 1;
   }
 }
+
 @keyframes roll-in-right {
   0% {
     -webkit-transform: translateX(800px) rotate(540deg);
     transform: translateX(800px) rotate(540deg);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: translateX(0) rotate(0deg);
     transform: translateX(0) rotate(0deg);
@@ -420,18 +484,21 @@
     transform: rotate(-720deg);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: rotate(0);
     transform: rotate(0);
     opacity: 1;
   }
 }
+
 @keyframes rotate-in-center {
   0% {
     -webkit-transform: rotate(-720deg) scale(0);
     transform: rotate(-720deg) scale(0);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: rotate(0) scale(1);
     transform: rotate(0) scale(1);
@@ -443,14 +510,17 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @keyframes fade-in {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
