@@ -11,6 +11,7 @@
   }
 }
 
+
 .about-label {
   font-family: 'Montserrat';
   text-align: center;
@@ -107,6 +108,7 @@
   }
 }
 
+
 .about-info__discription {
   display: flex;
   flex-direction: column;
@@ -148,7 +150,7 @@
   }
   @include tablet {
     margin-bottom: 8px;
-		 @include font(400, 12px, 176%, 0.04em);
+    @include font(400, 12px, 176%, 0.04em);
   }
   @include desktop {
     @include font(400, 14px, 194%, 0.04em);
@@ -160,7 +162,7 @@
   @include tablet {
     display: block;
     margin-bottom: 32px;
-		@include font(400, 12px, 194%, 0.04em);
+    @include font(400, 12px, 194%, 0.04em);
   }
   @include desktop {
     margin-bottom: 54px;
