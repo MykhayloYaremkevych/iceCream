@@ -1,5 +1,6 @@
 .product {
   padding-top: 60px;
+  padding-bottom: 60px;
 
   @media screen and (max-width: 480px) {
     background-image: url(../images/products/Backgroud_mobile.svg);
@@ -50,10 +51,10 @@
   text-transform: uppercase;
   margin-bottom: 148px;
 
-  @media screen and (min-width: $mobile) {
-    width: 100%;
-    margin-bottom: 148px;
-  }
+  // @media screen and (min-width: $mobile) {
+  //   // width: 100%;
+  //   margin-bottom: 148px;
+  // }
 
   @media screen and (min-width: $tablet) {
     font-size: 34px;
@@ -69,20 +70,20 @@
 }
 
 .product__list {
-  padding-bottom: 6px;
+
 
   @include tablet {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    padding-bottom: 60px;
+
   }
 
   @include desktop {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
-    // padding-bottom: 60px;
+
   }
 }
 
@@ -96,17 +97,19 @@
   margin-right: auto;
   padding: 126px 25px 16px;
 
-  &:not(last child) {
-    margin-bottom: 171px;
-  }
+  &:not(:last-child) {
 
-  @media screen and (max-width: 479) {
-    max-width: 280px;
-    padding: 123px 40px 16px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 171px;
+      max-width: 280px;
+      padding: 123px 40px 16px;
+
+    }
   }
 
   @media screen and (min-width: $tablet) {
-    // max-width: 224px;
+    margin-bottom: 0px;
     width: auto;
     padding: 108px 26px 12px;
     flex-basis: calc((100% - 32px) / 3);
@@ -116,7 +119,7 @@
   @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - 64px) / 3);
     max-width: 370px;
-    padding: 165px 63px 67px;
+    padding: 165px 63px 16px;
     height: 536px;
   }
 }
@@ -202,6 +205,7 @@
     background-size: contain;
     background-position: center;
   }
+
   &:after {
     content: '';
     position: absolute;
@@ -212,12 +216,15 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
+
     @media screen and (min-width: 200px) {
       top: -94px;
     }
+
     @media screen and (min-width: $tablet) {
       top: -120px;
     }
+
     @media screen and (min-width: $desktop) {
       width: 302px;
       height: 302px;
@@ -232,14 +239,14 @@
   background: #aec6a5;
   box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
   border-radius: 15.7808px;
+
   &:after {
-    background: linear-gradient(
-        0deg,
+    background: linear-gradient(0deg,
         rgba(156, 190, 143, 0.7),
-        rgba(156, 190, 143, 0.7)
-      ),
+        rgba(156, 190, 143, 0.7)),
       #d9d9d9;
     box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+
     @media screen and (min-width: $desktop) {
       box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
     }
@@ -261,8 +268,8 @@
       background-image: url(../images/products/ice-cream-mobile.png);
 
       @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
         background-image: url(../images/products/ice-cream-mobilex2.png);
       }
     }
@@ -274,8 +281,8 @@
       background-image: url(../images/products/ice-cream-mobile.png);
 
       @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
         background-image: url(../images/products/ice-cream-mobilex2.png);
       }
     }
@@ -287,8 +294,8 @@
       background-image: url(../images/products/ice-cream-decktop.png);
 
       @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
         background-image: url(../images/products/ice-cream-decktopx2.png);
       }
     }
@@ -298,6 +305,7 @@
 // ДРУГА КАРТИНКА ---------------------------------------------
 .ice-coffee__card::before {
   content: '';
+
   @media screen and (min-width: 200px) {
     top: -105px;
     width: 200px;
@@ -305,8 +313,8 @@
     background-image: url(../images/products/ice-cofee-mobile.png);
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       background-image: url(../images/products/ice-cofee-mobilex2.png);
     }
   }
@@ -318,8 +326,8 @@
     background-image: url(../images/products/ice-cofee-mobile.png);
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       background-image: url(../images/products/ice-cofee-mobilex2.png);
     }
   }
@@ -331,8 +339,8 @@
     background-image: url(../images/products/ice-cofee-decktop.png);
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       background-image: url(../images/products/ice-cofee-decktopx2.png);
     }
   }
@@ -340,13 +348,12 @@
 
 .ice-coffee__card {
   &:after {
-    background: linear-gradient(
-        0deg,
+    background: linear-gradient(0deg,
         rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)
-      ),
+        rgba(248, 210, 78, 0.7)),
       #d9d9d9;
     box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+
     @media screen and (min-width: $desktop) {
       box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
     }
@@ -356,6 +363,7 @@
 // ТРЕТЯ КАРТИНКА ----------------------------------------------------
 .milkshakes__card::before {
   content: '';
+
   @media screen and (min-width: 200px) {
     top: -105px;
     width: 200px;
@@ -363,8 +371,8 @@
     background-image: url(../images/products/milkshakes-mobile.png);
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       background-image: url(../images/products/milkshakes-mobilex2.png);
     }
   }
@@ -376,8 +384,8 @@
     background-image: url(../images/products/milkshakes-mobile.png);
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       background-image: url(../images/products/milkshakes-mobilex2.png);
     }
   }
@@ -389,8 +397,8 @@
     background-image: url(../images/products/milkshakes-decktop.png);
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       background-image: url(../images/products/milkshakes-decktopx2.png);
     }
   }
@@ -398,13 +406,12 @@
 
 .milkshakes__card {
   &:after {
-    background: linear-gradient(
-        0deg,
+    background: linear-gradient(0deg,
         rgba(213, 117, 63, 0.7),
-        rgba(213, 117, 63, 0.7)
-      ),
+        rgba(213, 117, 63, 0.7)),
       #d9d9d9;
     box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+
     @media screen and (min-width: $desktop) {
       box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
     }

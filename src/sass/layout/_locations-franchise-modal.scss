@@ -10,10 +10,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  
+  background-color: rgba(0, 0, 0, 0.1);
   z-index: 20;
   transition: .3s all;
-  overflow-y: scroll;
 }
 
 
@@ -27,11 +26,12 @@
   height: auto;
 
   /*  Центрируємом и задаємо z-index вищий за підкладку*/
+
   position: fixed;
   top: 0;
   left: 50%;
-  transform: translate(-50%, 0);
-  z-index: 30;
+  transform: translateX(-50%);
+  z-index: 100;
 
   @media screen and (min-width: 768px) {    
     min-width: 568px;
@@ -91,7 +91,7 @@
     }
   }  
 
-  p {
+  &__p {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.4;
@@ -139,6 +139,7 @@
     color: $color-primary;
 
     transform: border-color 250ms ease-in;
+
   }
 
   &__input::placeholder {
@@ -172,11 +173,6 @@
   opacity: 1;
   visibility: visible;  
 }
-
-//   @media screen and (min-width: 768px) {
-//     margin-bottom: 32px;
-//   }
-// }
 
 .modal__lab-form {
   display: block;
@@ -239,6 +235,7 @@
 
   transition: color 250ms ease-in;
 
+
   &:hover,
   &:focus {
     background-color: $button-hover;
@@ -260,7 +257,5 @@
   &:focus {
     fill: $button-hover;
   }
+
 }
-
-
-

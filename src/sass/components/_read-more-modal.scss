@@ -61,7 +61,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 30; /* Должен быть выше чем у подложки*/
+  z-index: 100; /* Должен быть выше чем у подложки*/
 
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
@@ -79,18 +79,19 @@
 /* Стили для кнопки закрытия */
 
 .read-more-modal .modal__cross {
-  width: 12px;
-  height: 12px;
   position: absolute;
-  top: 12px;
-  right: 12px;
-  fill: rgb(0, 0, 0);
-  cursor: pointer;
-  @include tablet {
-    width: 13px;
-    height: 13px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    top: 12px;
+    right: 12px;
+    border: $secondary-text-color;
+
+    @include tablet {
+      width: 24px;
+      height: 24px;
+    }
   }
-}
 
 .modal__cross.js-modal-close {
   background-color: transparent;
