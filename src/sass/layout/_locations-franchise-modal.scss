@@ -21,7 +21,7 @@
   opacity: 0;
   visibility: hidden;
 
-  max-width: 280px;
+  width: 280px;
   padding: 28px;
   height: auto;
 
@@ -45,7 +45,7 @@
   align-items: center;
   align-content: center;  
   
-  border: 1px solid $accent-color;
+  border: 2px solid $accent-color;
   border-radius: 10px;
 
   background: $secondary-text-color;
