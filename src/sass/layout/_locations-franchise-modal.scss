@@ -1,6 +1,4 @@
 .overlay {
-
-
   /* Ховаємо підкладку */
   opacity: 0;
   visibility: hidden;
@@ -12,7 +10,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
   z-index: 20;
-  transition: .3s all;
+  transition: .3s all;    
 }
 
 
@@ -23,7 +21,8 @@
 
   width: 280px;
   padding: 28px;
-  height: auto;
+  height: 100%;
+  overflow-y: auto;
 
   /*  Центрируємом и задаємо z-index вищий за підкладку*/
 
@@ -35,6 +34,7 @@
 
   @media screen and (min-width: 768px) {    
     min-width: 568px;
+    height: auto;
     padding: 32px 60px;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -42,8 +42,7 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  align-content: center;  
+  align-items: center;    
   
   border: 2px solid $accent-color;
   border-radius: 10px;
@@ -146,10 +145,17 @@
     color: $color-primary;    
   }
 
-  &__input:hover,
-  &__input:focus {
-    border-color: $button-hover;
+  &__input:hover {    
+    border: 1px solid #AEC6A5
+  }  
+  
+  &__input:valid {
+    border: 1px solid #ABABAB;
   }
+
+  // &__input:invalid {
+  //   border: 2px solid red;
+  // }
   
   &__cross {
     position: absolute;

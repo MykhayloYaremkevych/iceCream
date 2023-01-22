@@ -3,20 +3,29 @@
   <h3 class="buy-now__title">Buy now</h3>
 
   <ul class="list buy-now__list">
-    <li class="buy-now__item buy-now__ice-cream">      
-      <h3 class="buy-now__subtitle">ICE CREAM</h3>      
+    <li class="buy-now__item buy-now__ice-cream">
+      <label class="buy-now__label">
+        <input class="buy-now__checkbox" type="checkbox" name="product" value="icecream">
+        <span class="buy-now__product icecream">ice cream</span>        
+      </label>
     </li>
     <li class="buy-now__item buy-now__ice-coffee">
-      <h3 class="buy-now__subtitle">ICE COFFEE</h3>
+      <label class="buy-now__label">
+        <input class="buy-now__checkbox" type="checkbox" name="product" value="icecoffee">
+        <span class="buy-now__product icecoffee">ice coffee</span>
+      </label>
     </li>
     <li class="buy-now__item buy-now__milkshakes">
-      <h3 class="buy-now__subtitle">MILKSHAKE</h3>
-    </li>
+      <label class="buy-now__label">
+        <input class="buy-now__checkbox" type="checkbox" name="product" value="milkshakes">
+        <span class="buy-now__product milkshakes">ice coffee</span>
+      </label>
+    </li>    
   </ul>
   <form action="#" class="modal__lab-form">
     <div class="modal__input-group">
       <div class="modal__input-wrapper">
-        <input type="text" class="modal__input" placeholder="Name" name="name" required autofocus>
+        <input type="text" class="modal__input" placeholder="Name" name="name" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" minlength="5" title="Username must be two words separated by space.">
       </div>
     </div>
     <div class="modal__input-group">

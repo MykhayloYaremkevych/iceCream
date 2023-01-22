@@ -19,7 +19,7 @@
     <form action="#" class="modal__lab-form">
       <div class="modal__input-group">
         <div class="modal__input-wrapper">
-          <input type="text" class="modal__input" placeholder="Name" name="name" required autofocus>
+          <input type="text" class="modal__input" placeholder="Name" name="name" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" minlength="5" title="Username must be two words separated by space.">
         </div>
       </div>
       <div class="modal__input-group">

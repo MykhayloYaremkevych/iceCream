@@ -32,9 +32,7 @@
   width: 132px;
   height: 135px;
   margin-left: auto;
-  margin-right: auto;
-  padding-top: 95px;
-  padding-bottom: 20px;
+  margin-right: auto;  
   border-radius: 15.78px;
   margin-bottom: 86px;  
 
@@ -44,22 +42,11 @@
   }  
 }
 
-.buy-now__ice-cream {
-  // background: #AEC6A5;
-  border: 2px solid #AEC6A5;
+.buy-now__item:last-child {  
+  margin-bottom: 0;
 }
 
-.buy-now__ice-coffee {
-  background: #efd478;
-  border: 2px solid #efd478;
-}
-
-.buy-now__milkshakes {
-  // background: #d6936d;
-  border: 2px solid #d6936d;
-}
-
-//  ЗАГАЛЬНИК КОД НА БІФОР -------------------------------
+//  КОД НА БІФОР
 
 .buy-now__item {
   &::before {
@@ -84,20 +71,18 @@
     left: 50%;
     transform: translateX(-50%);
     display: block;
-    top: -63px;
+    top: -60px;
     width: 132px;
     height: 132px;
     border-radius: 50%;
   }  
 }
 
-.buy-now__ice-cream {
+.buy-now__ice-cream {  
+  border: 2px solid #AEC6A5;
 
   &:after {
-    background: linear-gradient(0deg,
-        rgba(156, 190, 143, 0.7),
-        rgba(156, 190, 143, 0.7)),
-      #d9d9d9;
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
     box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
   }
 
@@ -108,13 +93,11 @@
 }
 
 .buy-now__ice-coffee {
+  border: 2px solid #efd478;
 
   &:after {
-    background: linear-gradient(0deg,
-        rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)),
-      #d9d9d9;
-    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
   }
 
   &::before {
@@ -124,13 +107,11 @@
 }
 
 .buy-now__milkshakes {
+  border: 2px solid #d6936d;
 
   &:after {
-    background: linear-gradient(0deg,
-          rgba(213, 117, 63, 0.7),
-          rgba(213, 117, 63, 0.7)),
-        #d9d9d9;
-      box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+    background: rgba(213, 117, 63, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   &::before {
@@ -139,15 +120,43 @@
   }
 }
 
-.buy-now__subtitle {
-  display: inline-flex;
+.buy-now__label {
+  width: 100%;
+  height: 100%;
+}
+
+.buy-now__checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.buy-now__product {
+  font-weight: 700;
+  font-size: 16px;
+  width: 100%;
+    height: 100%;
+  color: #131313;
+  line-height: 1.3;
+  font-style: bold;
+  text-transform: uppercase;
+  text-align: center;
+  border: 0 solid;
+  border-radius: 11px;
+  justify-content: center;
   align-items: flex-end;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-  margin: 0 auto;  
+  padding-bottom: 20px;
+  display: flex;
+  position: relative;
+}
+
+.buy-now__checkbox:checked+.icecream {
+  background-color: #aec6a5;  
+}
+
+.buy-now__checkbox:checked+.icecoffee {
+  background-color: #efd478;
+}
+
+.buy-now__checkbox:checked+.milkshakes {
+  background-color: #d6936d;  
 }
