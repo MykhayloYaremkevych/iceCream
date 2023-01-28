@@ -19,11 +19,10 @@
   opacity: 0;
   visibility: hidden;
 
-  width: 280px;
-  padding: 28px;
-  height: auto;
-  // height: 100%;
-  // overflow-y: auto;
+  max-width: 280px;
+  padding: 28px;  
+  height: 100%;
+  overflow-y: auto;
 
   /*  Центруємо ї задаємо z-index вищий за підкладку*/
   position: fixed;
@@ -38,6 +37,7 @@
     padding: 32px 60px;
     top: 50%;
     transform: translate(-50%, -50%);
+    overflow-y: hidden;
   }
 
   display: flex;
@@ -50,7 +50,7 @@
   background: $secondary-text-color;
   
   &__map {    
-    width: 224px;
+    width: 100%;
     height: 199px;
     background-image: url('../images/modal/rectangle-224.jpg');
     block-size: cover;
@@ -59,7 +59,7 @@
     margin-bottom: 24px;
     
     @media screen and (min-width: 768px) {
-      width: 448px;
+      width: 100%;
       height: 260px;
       background-image: url('../images/modal/rectangle-448.jpg');
       margin-bottom: 32px;
@@ -141,7 +141,6 @@
     color: $color-primary;
 
     transform: border-color 250ms ease-in;
-
   }  
   
   &__cross {
@@ -165,14 +164,12 @@
   opacity: 1;
   visibility: visible;  
 }
+
 .modal__lab-form input {
   &:hover,
   &:focus {
     border: 1px solid $accent-color;
-  }
-  &:valid {
-    border: 1px solid $button-hover;
-  }
+  }  
 }
 
 .modal__lab-form {
@@ -182,6 +179,14 @@
   font-size: 12px;
   letter-spacing: 0.01em;
   color: $color-primary;  
+}
+
+.modal__input:not(:placeholder-shown):required:valid {
+  border-color: $button-hover;
+}
+
+.modal__input:not(:placeholder-shown):not(:focus):required:invalid {
+  border-color: red;
 }
 
 .modal__text {
@@ -209,11 +214,16 @@
     margin-bottom: 16px;
   }  
 }
+
 .modal__lab-form textarea {
   &:hover,
   &:focus {
     border: 1px solid $accent-color;
   }
+}
+
+.modal__text:not(:placeholder-shown):valid {
+  border-color: $button-hover;
 }
 
 .form-send-btn {

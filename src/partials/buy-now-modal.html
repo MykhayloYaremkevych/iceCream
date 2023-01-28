@@ -24,10 +24,14 @@
       </li>
     </ul>
     <div class="modal__input-group">      
-        <input type="text" class="modal__input" placeholder="Name" name="name" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" minlength="5" title="Ім'я користувача має складатися з двох слів латинськими літерами, розділених пробілом">      
+        <input type="text" class="modal__input" placeholder="Name" name="name" required
+      minlength="6"
+      pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+      title="Username must consist of two words in Latin letters, separated by a space">      
     </div>
     <div class="modal__input-group">      
-        <input type="tel" class="modal__input" placeholder="Phone" name="tel" required>      
+        <input type="tel" class="modal__input" placeholder="Phone" name="tel" required pattern="380[0-9]{9}"
+      title="Phone number must be 12 symbols (380XXXXXXXXX)">      
     </div>
     <div class="modal__input-group">
       <textarea name="coment" id="coment" class="modal__text" placeholder="Comment"></textarea>

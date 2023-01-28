@@ -3,7 +3,7 @@
   <div class="modal" data-modal="11">
     <h4 class="modal__heading">Our Locations</h4>
     <div class="modal__map"></div>
-    <a href="https://www.google.com.ua/maps/@49.6021346,34.487199,12z?hl=en" class="form-send-btn">Open map</a>
+    <a href="https://www.google.com.ua/maps/@49.6021346,34.487199,12z?hl=en" class="form-send-btn" target="_blank">Open map</a>
     <button type="button" class="modal__cross js-modal-close"><svg width="24" height="24" class="icon-cross">
         <use href="./images/modal/icons.svg#icon-cross"></use>
       </svg></button>
@@ -18,11 +18,15 @@
       below and we will reach out for additional information. We appreciate your patience.</p>
     <form action="#" class="modal__lab-form">
       <div class="modal__input-group">
-          <input type="text" class="modal__input" placeholder="Name" name="name" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-            minlength="5" title="Ім'я користувача має складатися з двох слів латинськими літерами, розділених пробілом">
+          <input type="text" class="modal__input" placeholder="Name" name="name" required
+      minlength="6"
+      pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+      title="Username must consist of two words in Latin letters, separated by a space">
       </div>
       <div class="modal__input-group">
-          <input type="tel" class="modal__input" placeholder="Phone" name="tel" required>        
+          <input type="tel" class="modal__input" placeholder="Phone" name="tel"
+          required pattern="380[0-9]{9}"
+      title="Phone number must be 12 symbols (380XXXXXXXXX)">        
       </div>
       <div class="modal__input-group">
           <input type="email" class="modal__input" placeholder="Email" name="email" required>
