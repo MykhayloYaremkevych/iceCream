@@ -13,7 +13,6 @@
   transition: .3s all;    
 }
 
-
 .modal {
   /* Ховаєм вікна */
   opacity: 0;
@@ -118,11 +117,6 @@
       margin-bottom: 16px;
     }
   }
-
-  // &__input-wrapper {
-  //   display: flex;
-  //   // width: 100%;  
-  // }
 
   &__input {
     display: flex;
@@ -246,7 +240,6 @@
   color: $color-primary;
 
   transition: color 250ms ease-in;
-
 
   &:hover,
   &:focus {
